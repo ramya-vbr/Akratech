@@ -9,24 +9,22 @@ function Assessment() {
   const [result, setResult] = useState([]);
   const [loader, setLoader] = useState(true);
   const [value, setValue] = useState([]);
-  
-  useEffect(() => {
-    const url = 'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline';
-    fetch(url)
-      .then((response) => {
-        return response.json();
-      })
-      .then((parsedData) => {
-        setLoader(false);
-        setResult(parsedData);
-        localStorage.setItem('Item', JSON.stringify(parsedData));
-
-      })
-
-  }, [])
 
   useEffect(() => {
-    setValue(JSON.parse(localStorage.getItem('Item')))
+    const fetchData = async () => {
+      const url = 'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline';
+      const data = await fetch(url)
+        .then((response) => {
+          return response.json();
+        })
+      setLoader(false);
+      setResult(data);
+      await localStorage.setItem('Item', JSON.stringify(data));
+      setValue(JSON.parse(localStorage.getItem('Item')))
+    }
+
+    fetchData()
+      .catch(console.error);
   }, [])
 
   const handledelete = (indexdel) => {
