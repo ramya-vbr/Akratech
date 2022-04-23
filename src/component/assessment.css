@@ -1,0 +1,44 @@
+.style-page{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 90px 86px 0px 80px;
+}
+.card-image{
+    width:75px;
+    height:75px;
+    border-radius: 10px;
+    margin: 12px 15px 0px 15px;
+}
+.name-style{
+    font-size:18px;
+    margin-left: -11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.MuiPaper-root {
+    margin-bottom: 20px; 
+}
+.card-style{
+    margin-left: 45px;
+    width:20%;
+}
+.card-content {
+ padding: 25px !important;
+}
+.MuiButton-root.refresh-style{
+    width: 10%;
+    height: 35px;
+    margin-left: 5px;
+    position: absolute;
+    top: 20px;
+    left: 120px;
+}
+.css-sghohy-MuiButtonBase-root-MuiButton-root.item-style{
+    width: 10%;
+    height: 35px;
+    margin-left: 5px;
+    position: absolute;
+    top: 20px;
+    left:270px;
+}
