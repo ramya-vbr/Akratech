@@ -1,44 +1,82 @@
-.style-page{
-    display:flex;
-    flex-wrap: wrap;
-    padding: 90px 86px 0px 80px;
+.container {
+    padding: 20px 20px;
 }
-.card-image{
-    width:75px;
-    height:75px;
+
+.style-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card-image {
+    width: 75px;
+    height: 75px;
     border-radius: 10px;
     margin: 12px 15px 0px 15px;
 }
-.name-style{
-    font-size:18px;
-    margin-left: -11px;
+
+.name-style {
+    font-size: 18px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.MuiPaper-root {
-    margin-bottom: 20px; 
+
+.card-style {
+    margin: 10px;
+    width: 23%;
 }
-.card-style{
-    margin-left: 45px;
-    width:20%;
-}
+
 .card-content {
- padding: 25px !important;
+    cursor: default;
 }
-.MuiButton-root.refresh-style{
+
+.MuiButton-root.refresh-style {
     width: 10%;
     height: 35px;
     margin-left: 5px;
-    position: absolute;
-    top: 20px;
-    left: 120px;
 }
-.css-sghohy-MuiButtonBase-root-MuiButton-root.item-style{
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root.item-style {
     width: 10%;
     height: 35px;
-    margin-left: 5px;
-    position: absolute;
-    top: 20px;
-    left:270px;
+}
+
+.details-ctn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-style {
+    font-size: 16px;
+    margin-top: 5px;
+    color: blue;
+}
+
+.rating-style {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.rating-design {
+    font-size: 12px;
+}
+
+.buttonActionContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.countButton {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
