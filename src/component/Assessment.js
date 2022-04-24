@@ -12,7 +12,7 @@ function Assessment() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const url = 'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline';
+      const url = 'https://mocki.io/v1/df6b4a6a-4ec1-4ca5-9776-397df6f8bed8';
       const data = await fetch(url)
         .then((response) => {
           return response.json();
